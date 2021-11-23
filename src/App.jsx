@@ -1,11 +1,13 @@
+import { useSelector } from 'react-redux';
 import './App.css';
 
 function App() {
+  const { saludo } = useSelector(state => state)
   return (
     <div className="App">
       <header className="App-header">
         <p>
-         ejemplo
+         {saludo}
         </p>
         <a
           className="App-link"
